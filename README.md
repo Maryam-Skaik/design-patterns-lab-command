@@ -14,7 +14,7 @@ This repository accompanies the lecture on the **Command Pattern**, focusing on 
 ▶️ Watch on YouTube:
 
 
-[Lecture Video](#)
+[Lecture Video](https://youtu.be/lOnbj1dUJs4)
 
 ---
 
