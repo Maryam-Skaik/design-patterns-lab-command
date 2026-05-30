@@ -1,9 +1,10 @@
 # 🎮 Command Design Pattern (Java)
 
 ![Java](https://img.shields.io/badge/Language-Java-blue.svg)
-![Pattern](https://img.shields.io/badge/Design%20Pattern-Behavioral-green.svg)
+![Pattern](https://img.shields.io/badge/Design%20Pattern-Behavioral-red.svg)
+![Pattern](https://img.shields.io/badge/Pattern-Command-pink)
+![Week](https://img.shields.io/badge/Week-8-green)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-orange.svg)
-![Focus](https://img.shields.io/badge/Focus-Decoupling%20%26%20Behavior-purple.svg)
 
 ---
 
@@ -18,7 +19,7 @@ This repository accompanies the lecture on the **Command Pattern**, focusing on 
 
 ---
 
-# 🧠 Overview
+## 🧠 Overview
 
 The **Command Pattern** is a behavioral design pattern that transforms requests/actions into separate objects called:
 
@@ -41,7 +42,7 @@ This pattern creates loose coupling between:
 
 ---
 
-# 💡 Core Idea
+## 💡 Core Idea
 
 > Encapsulate a request as an object.
 
@@ -51,7 +52,7 @@ Or more simply:
 
 ---
 
-# 🏗️ Real-World Analogy
+## 🏗️ Real-World Analogy
 
 Think about a restaurant system.
 
@@ -81,7 +82,7 @@ This is exactly how the Command Pattern works.
 
 ---
 
-# ⚙️ When to Use This Pattern
+## ⚙️ When to Use This Pattern
 
 Use Command Pattern when:
 
@@ -95,7 +96,7 @@ Use Command Pattern when:
 
 ---
 
-# ❌ Problem Without This Pattern
+## ❌ Problem Without This Pattern
 
 Without Command Pattern, objects directly depend on each other.
 
@@ -118,13 +119,13 @@ As systems grow, direct method calls create rigid architectures.
 
 ---
 
-# 🧩 Solution Approach
+## 🧩 Solution Approach
 
 The Command Pattern separates responsibilities into four main components.
 
 ---
 
-## 🔵 Command Interface
+### 🔵 Command Interface
 
 * Defines the common contract
 * Usually contains `execute()`
@@ -132,7 +133,7 @@ The Command Pattern separates responsibilities into four main components.
 
 ---
 
-## 🟢 Concrete Commands
+### 🟢 Concrete Commands
 
 * Represent specific executable actions
 * Store receiver objects
@@ -147,7 +148,7 @@ Examples:
 
 ---
 
-## 🟣 Receiver
+### 🟣 Receiver
 
 * Performs the actual work
 * Contains business logic
@@ -162,7 +163,7 @@ Examples:
 
 ---
 
-## 🟡 Invoker
+### 🟡 Invoker
 
 * Triggers command execution
 * Does NOT know implementation details
@@ -176,7 +177,7 @@ Examples:
 
 ---
 
-# 📊 UML Structure
+## 📊 UML Structure
 
 ```text
              <<interface>>
@@ -203,7 +204,7 @@ Examples:
 
 ---
 
-# 🧪 Example Scenario — Smart Home System
+## 🧪 Example Scenario — Smart Home System
 
 Imagine a smart home application.
 
@@ -231,7 +232,7 @@ Important condition:
 
 ---
 
-# 🔥 Core Behavior Explained
+## 🔥 Core Behavior Explained
 
 When the system runs:
 
@@ -252,7 +253,7 @@ This creates:
 
 ---
 
-# 🧠 Key Insight
+## 🧠 Key Insight
 
 A very important mental model:
 
@@ -267,7 +268,7 @@ Or:
 
 ---
 
-# 🔄 Runtime Flexibility Example
+## 🔄 Runtime Flexibility Example
 
 The same remote control can execute completely different actions simply by replacing command objects at runtime.
 
@@ -286,7 +287,7 @@ No modification is required inside the remote control itself.
 
 ---
 
-# 🔁 Undo Support
+## 🔁 Undo Support
 
 One of the biggest strengths of the Command Pattern is undo functionality.
 
@@ -310,7 +311,7 @@ The key idea:
 
 ---
 
-# 📚 Real-World Applications
+## 📚 Real-World Applications
 
 The Command Pattern is widely used in real systems.
 
@@ -327,29 +328,54 @@ Examples include:
 
 ---
 
-# 🧠 Design Principles Behind It
+## 🧠 Design Principles Behind It
 
 This pattern strongly supports:
 
-## ✅ Favor Composition Over Inheritance
+### ✅ Favor Composition Over Inheritance
 
 Behavior is injected through objects instead of subclassing.
 
 ---
 
-## ✅ Open/Closed Principle
+### ✅ Open/Closed Principle
 
 New commands can be added without modifying existing classes.
 
 ---
 
-## ✅ Single Responsibility Principle
+### ✅ Single Responsibility Principle
 
 Each command represents one focused action.
 
 ---
 
-# 🎯 Learning Outcome
+## 💾 Solutions
+
+📁 [`solutions/`](solutions/)
+
+All solutions are available in the `/solutions` folder.
+
+Each solution includes:
+
+* UML + design explanation
+* Clean Java implementation
+* Command Pattern usage (runtime command switching)
+* Separation between invoker, commands, and receivers
+* Notes on design decisions and extensibility
+* Example usage via `Main.java`
+
+---
+
+### 🧪 Included Activities
+
+* 🧠 Activity: Smart Office Automation System
+
+> Students should first implement the system independently, then compare their design with the provided solution.
+
+---
+
+## 🎯 Learning Outcome
 
 After studying this pattern, you should be able to:
 
