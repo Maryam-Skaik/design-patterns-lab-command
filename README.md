@@ -1,4 +1,4 @@
-# 🎮 Command Design Pattern (Java)
+# 🎮 Design Patterns Lab — Command Pattern
 
 ![Java](https://img.shields.io/badge/Language-Java-blue.svg)
 ![Pattern](https://img.shields.io/badge/Design%20Pattern-Behavioral-red.svg)
